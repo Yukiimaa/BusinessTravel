@@ -1,0 +1,18 @@
+extends base
+
+block vars
+  - var siteTitle = 'Сайт 03';
+
+block content
+  body.body
+    .wrapper(style="width: 463px;")
+      img.logo(src="/src/sass/logo.svg", width="116", height="30", alt="image description", style="text-align: center")
+
+      form(action="")
+        h2 Ссылка на сброс пароля была отправлена
+        p.p1
+          | На эл. адрес designer@divtech.kz было отправлено письмо с ссылкой на сброс пароля.
+
+      p
+        | Перейти на 
+        a.home-page(href="site1.html", class="home-page") страницу входа
