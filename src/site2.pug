@@ -1,0 +1,24 @@
+extends base
+
+block vars
+  - var siteTitle = 'Сайт 02';
+
+block content
+  body.body
+    .wrapper(style="width: 344px;")
+      img.logo(src="/src/sass/logo.svg", width="116", height="30", alt="image description", style="text-align: center")
+
+      form(action="")
+        h2 Восстановить пароль
+        .input
+          input(type="email", placeholder="E-mail", required)
+          .error
+            span#email-error Неправильный формат email
+
+        .remember-forgot
+          a(href="#")
+        
+        button.btn(type="submit") Восстановить пароль
+      p
+        | Перейти на 
+        a.home-page(href="site1.html", class="home-page") страницу входа

@@ -1,0 +1,28 @@
+extends base
+
+block vars
+  - var siteTitle = 'Сайт 01';
+
+block content
+  .wrapper(style="width: 344px;")
+    img.logo(src="/src/sass/logo.svg", width="116", height="30", alt="image description", style="text-align: center")
+
+    form(action="")
+      h2 Войти в аккаунт
+      .input
+        input(type="email", placeholder="E-mail", required)
+        .error  
+          span#email-error Неправильный формат email
+      
+      .input
+        input(type="password", placeholder="Пароль", required)
+        .error
+          span#password-error Пароль должен содержать минимум 8 символов
+      
+      .remember-forgot
+        a(href="site2.html") Забыли пароль?
+      
+      button.btn(type="submit") Войти
+
+
+  
